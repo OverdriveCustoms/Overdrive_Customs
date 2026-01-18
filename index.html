@@ -1,1 +1,80 @@
 
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi página -Overdrive Customs</title>
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="assets/logo.png" alt="Overdrive Customs logo" class="logo" />
+        <span class="brand-text">Overdrive Customs</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h2>Bienvenido a Overdrive Customs</h2>
+        <p>Tu proyecto, personalizado. Creamos y mejoramos vehículos y experiencias.</p>
+        <a class="btn" href="#contacto">Contáctanos</a>
+      </div>
+    </section>
+
+    <section id="servicios" class="container cards">
+      <article class="card">
+        <h3>Customización</h3>
+        <p>Modificaciones estéticas y de rendimiento adaptadas a tus necesidades.</p>
+      </article>
+      <article class="card">
+        <h3>Mantenimiento</h3>
+        <p>Revisión completa y puesta a punto profesional.</p>
+      </article>
+      <article class="card">
+        <h3>Consultoría</h3>
+        <p>Asesoría para proyectos grandes y presupuestos.</p>
+      </article>
+    </section>
+
+    <section id="contacto" class="container contact">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <label>
+          Nombre
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar</button>
+        <p id="formStatus" class="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Overdrive Customs</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
