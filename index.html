@@ -6,31 +6,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* ===== VARIABLES ===== /
+/* ===== RESET FUERTE ===== /
+html, body{
+  margin:0;
+  padding:0;
+  background:#0f0f0f !important;
+  color:#ffffff;
+  font-family:Arial, sans-serif;
+}
+
+/ ===== VARIABLES ===== /
 :root{
   --tomate:#ff6a00;
-  --negro:#000;
+  --negro:#000000;
   --gris:#0f0f0f;
-  --texto:#ffffff;
-}
-
-/ ===== RESET ===== */
-{
-  box-sizing:border-box;
-}
-
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:var(--gris);
-  color:var(--texto);
 }
 
 / ===== BARRA AUTOMOTRIZ ===== /
 header{
-  background:linear-gradient(180deg,#000,#111);
+  background:linear-gradient(180deg,#000000,#111111);
   border-bottom:4px solid var(--tomate);
-  box-shadow:0 6px 18px rgba(0,0,0,.9);
+  box-shadow:0 6px 18px rgba(0,0,0,0.9);
 }
 
 .nav-bar{
@@ -44,7 +40,8 @@ header{
 
 / LINKS SIN AZUL /
 .nav-bar a,
-.nav-bar a:visited{
+.nav-bar a:visited,
+.nav-bar a:link{
   color:var(--tomate);
   text-decoration:none;
   font-weight:bold;
@@ -56,29 +53,23 @@ header{
   transition:all .25s ease;
 }
 
-.nav-bar a:hover,
-.nav-bar a:focus{
+.nav-bar a:hover{
   background:var(--tomate);
-  color:#fff;
+  color:#ffffff;
   box-shadow:0 0 14px rgba(255,106,0,.8);
-}
-
-.nav-bar a:active{
-  background:#cc5500;
-  color:#fff;
 }
 
 / ===== HERO = LOGO ===== /
 .hero{
-  background:#000;
+  background:#000000;
   display:flex;
   justify-content:center;
   align-items:center;
-  padding:18px 10px; / HERO COMPACTO /
+  padding:30px 10px;
 }
 
 .hero img{
-  height:70px;      / LOGO PEQUEÑO CONTROLADO /
+  height:120px;     / TAMAÑO CORRECTO (NO ENANO, NO GIGANTE) /
   width:auto;
 }
 
@@ -96,21 +87,21 @@ h2{
 }
 
 p, li{
-  color:#ddd;
+  color:#dddddd;
   line-height:1.6;
 }
 
 / ===== FOOTER ===== /
 footer{
-  background:#000;
+  background:#000000;
   border-top:4px solid var(--tomate);
   text-align:center;
   padding:15px;
   font-size:14px;
-  color:#aaa;
+  color:#aaaaaa;
 }
 
-/ ===== RESPONSIVE (CELULAR) ===== */
+/ ===== RESPONSIVE (CELULAR) ===== /
 @media(max-width:600px){
   .nav-bar{
     flex-direction:column;
@@ -119,15 +110,10 @@ footer{
 
   .nav-bar a{
     font-size:14px;
-    padding:10px;
   }
 
   .hero img{
-    height:55px;
-  }
-
-  section{
-    padding:35px 18px;
+    height:90px;   / CELULAR */
   }
 }
 </style>
@@ -150,7 +136,7 @@ footer{
 <section>
   <h2>Sobre nosotros</h2>
   <p>
-    <strong>Overdrive Customs</strong> es un negocio enfocado en la
+    <strong>Overdrive Customs</strong> es un negocio dedicado a la
     personalización automotriz, estética y estilo racing.
     Creamos identidad para cada vehículo.
   </p>
