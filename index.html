@@ -21,144 +21,46 @@ header{
   border-bottom:3px solid #ff6a00;
 }
 
-header img{
-  height:50px;
-  margin-bottom:8px;
-}
-
-header h1{
-  margin:0;
+nav a{
   color:#ff6a00;
-  letter-spacing:2px;
-  font-size:28px;
-}
-
-/ HERO /
-.hero{
-  background:url("assets/hero.jpeg") center/cover no-repeat;
-  padding:90px 20px;
-  text-align:center;
-  position:relative;
-}
-
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.65);
-}
-
-.hero-content{
-  position:relative;
-  max-width:900px;
-  margin:auto;
-}
-
-.hero h2{
-  font-size:36px;
-  color:#ff6a00;
-}
-
-.hero p{
-  font-size:18px;
-  color:#ddd;
-}
-
-/ BOTONES /
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  background:#ff6a00;
-  color:white;
-  padding:14px 22px;
-  border-radius:8px;
+  margin:0 12px;
   text-decoration:none;
   font-weight:bold;
-  transition:transform .2s, box-shadow .2s;
 }
 
-.btn:hover{
-  transform:translateY(-3px);
-  box-shadow:0 8px 20px rgba(0,0,0,0.6);
+/ HERO = LOGO /
+.hero{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:80px 20px;
+  background:#000;
 }
 
-/ SECCIONES /
-section{
-  max-width:1000px;
-  margin:auto;
-  padding:50px 20px;
-}
-
-section h2{
-  color:#ff6a00;
-  margin-bottom:20px;
-  text-align:center;
-}
-
-/ CARDS /
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:#151515;
-  padding:25px;
-  border-radius:10px;
-  text-align:center;
-  transition:transform .25s;
-}
-
-.card:hover{
-  transform:translateY(-8px);
-}
-
-/ GALERÍA /
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:15px;
-}
-
-.gallery img{
+.hero img{
+  max-width:300px;   / CONTROL DEL TAMAÑO DEL LOGO /
   width:100%;
-  border-radius:10px;
-  cursor:pointer;
-  transition:transform .2s;
 }
 
-.gallery img:hover{
-  transform:scale(1.05);
+/ SECTIONS /
+section{
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
 }
 
-/ CONTACTO /
-.contact{
-  text-align:center;
+h2{
+  color:#ff6a00;
 }
 
-.contact a{
-  display:inline-block;
-  margin:10px;
-}
-
-/ FOOTER /
+/ FOOTER */
 footer{
   background:#000;
   text-align:center;
-  padding:20px;
+  padding:15px;
   border-top:3px solid #ff6a00;
+  font-size:14px;
   color:#aaa;
-}
-
-/ RESPONSIVE */
-@media(max-width:600px){
-  .hero h2{
-    font-size:26px;
-  }
-  header h1{
-    font-size:22px;
-  }
 }
 </style>
 </head>
@@ -166,45 +68,33 @@ footer{
 <body>
 
 <header>
-  <img src="assets/logo.jpeg" alt="Overdrive Customs">
-  <h1>Overdrive Customs</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
 </header>
 
 <div class="hero">
-  <div class="hero-content">
-    <h2>Transformamos tu vehículo</h2>
-    <p>Personalización, estética y carácter automotriz</p>
-    <a class="btn" href="https://wa.me/593XXXXXXXXX" target="_blank">
-      Escríbenos por WhatsApp
-    </a>
-  </div>
+  <img src="assets/logo.jpeg" alt="Overdrive Customs">
 </div>
 
 <section>
-  <h2>Servicios</h2>
-  <div class="cards">
-    <div class="card">🚗 Personalización estética</div>
-    <div class="card">✨ Detailing profesional</div>
-    <div class="card">🔧 Accesorios y modificaciones</div>
-    <div class="card">🧠 Asesoría automotriz</div>
-  </div>
+  <h2>Sobre nosotros</h2>
+  <p>
+    En <strong>Overdrive Customs</strong> nos especializamos en personalización
+    automotriz, estética y estilo para tu vehículo.
+  </p>
 </section>
 
 <section>
-  <h2>Nuestros trabajos</h2>
-  <div class="gallery">
-    <img src="assets/hero.jpeg" alt="">
-    <img src="assets/hero.jpeg" alt="">
-    <img src="assets/hero.jpeg" alt="">
-  </div>
-</section>
-
-<section class="contact">
-  <h2>Contacto</h2>
-  <p>📍 Ecuador</p>
-  <a class="btn" href="https://instagram.com/overdrivecustoms" target="_blank">
-    Instagram
-  </a>
+  <h2>Servicios</h2>
+  <ul>
+    <li>✔ Personalización estética</li>
+    <li>✔ Detailing profesional</li>
+    <li>✔ Accesorios automotrices</li>
+    <li>✔ Asesoría especializada</li>
+  </ul>
 </section>
 
 <footer>
