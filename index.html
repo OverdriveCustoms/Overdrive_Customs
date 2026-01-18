@@ -6,61 +6,101 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#0f0f0f;
-  color:#ffffff;
+/* ===== RESET GENERAL ===== */
+* {
+  box-sizing: border-box;
 }
 
-/* HEADER /
-header{
-  background:#000;
-  padding:15px;
-  text-align:center;
-  border-bottom:3px solid #ff6a00;
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f !important; /* Fondo negro profundo */
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
 }
 
-nav a{
-  color:#ff6a00;
-  margin:0 12px;
-  text-decoration:none;
-  font-weight:bold;
+/* ===== BARRA DE NAVEGACIÓN (LOS LINKS) ===== */
+header {
+  background: #000000;
+  border-bottom: 3px solid #ff6a00; /* Línea naranja bajo el menú */
+  padding: 15px 0;
+  text-align: center;
 }
 
-/ HERO = LOGO /
-.hero{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:80px 20px;
-  background:#000;
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
-.hero img{
-  max-width:300px;   / CONTROL DEL TAMAÑO DEL LOGO /
-  width:100%;
+/* Forzamos el color naranja en los enlaces */
+.nav-bar a {
+  color: #ff6a00 !important; /* NARANJA OVERDRIVE */
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
-/ SECTIONS /
-section{
-  max-width:900px;
-  margin:auto;
-  padding:40px 20px;
+.nav-bar a:hover {
+  color: #ffffff !important; /* Cambia a blanco al pasar el mouse */
 }
 
-h2{
-  color:#ff6a00;
+/* ===== EL LOGO (SOLUCIÓN AL TAMAÑO) ===== */
+.hero {
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
 }
 
-/ FOOTER */
-footer{
-  background:#000;
-  text-align:center;
-  padding:15px;
-  border-top:3px solid #ff6a00;
-  font-size:14px;
-  color:#aaa;
+.hero img {
+  max-width: 100%;    /* No permite que se salga de la pantalla */
+  height: auto;
+  max-height: 350px;  /* AJUSTA ESTE NÚMERO si lo quieres más chico o grande */
+  display: block;
+}
+
+/* ===== SECCIONES DE TEXTO ===== */
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #ff6a00;
+  text-transform: uppercase;
+  border-left: 4px solid #ff6a00;
+  padding-left: 15px;
+}
+
+p, li {
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000000;
+  border-top: 1px solid #333;
+  color: #666;
+  font-size: 13px;
 }
 </style>
 </head>
