@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Overdrive Customs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== VARIABLES ===== /
+:root{
+  --tomate:#ff6a00;
+  --negro:#000;
+  --gris:#0f0f0f;
+  --texto:#ffffff;
+}
+
+/ ===== RESET ===== */
+{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:var(--gris);
+  color:var(--texto);
+}
+
+/ ===== BARRA AUTOMOTRIZ ===== /
+header{
+  background:linear-gradient(180deg,#000,#111);
+  border-bottom:4px solid var(--tomate);
+  box-shadow:0 6px 18px rgba(0,0,0,.9);
+}
+
+.nav-bar{
+  max-width:1100px;
+  margin:auto;
+  padding:14px 20px;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+}
+
+/ LINKS SIN AZUL /
+.nav-bar a,
+.nav-bar a:visited{
+  color:var(--tomate);
+  text-decoration:none;
+  font-weight:bold;
+  font-size:15px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  padding:8px 16px;
+  border-radius:4px;
+  transition:all .25s ease;
+}
+
+.nav-bar a:hover,
+.nav-bar a:focus{
+  background:var(--tomate);
+  color:#fff;
+  box-shadow:0 0 14px rgba(255,106,0,.8);
+}
+
+.nav-bar a:active{
+  background:#cc5500;
+  color:#fff;
+}
+
+/ ===== HERO = LOGO ===== /
+.hero{
+  background:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:18px 10px; / HERO COMPACTO /
+}
+
+.hero img{
+  height:70px;      / LOGO PEQUEÑO CONTROLADO /
+  width:auto;
+}
+
+/ ===== CONTENIDO ===== /
+section{
+  max-width:900px;
+  margin:auto;
+  padding:45px 20px;
+}
+
+h2{
+  color:var(--tomate);
+  margin-bottom:12px;
+  letter-spacing:1px;
+}
+
+p, li{
+  color:#ddd;
+  line-height:1.6;
+}
+
+/ ===== FOOTER ===== /
+footer{
+  background:#000;
+  border-top:4px solid var(--tomate);
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+  color:#aaa;
+}
+
+/ ===== RESPONSIVE (CELULAR) ===== */
+@media(max-width:600px){
+  .nav-bar{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .nav-bar a{
+    font-size:14px;
+    padding:10px;
+  }
+
+  .hero img{
+    height:55px;
+  }
+
+  section{
+    padding:35px 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-bar">
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="assets/logo.jpeg" alt="Overdrive Customs">
+</div>
+
+<section>
+  <h2>Sobre nosotros</h2>
+  <p>
+    <strong>Overdrive Customs</strong> es un negocio enfocado en la
+    personalización automotriz, estética y estilo racing.
+    Creamos identidad para cada vehículo.
+  </p>
+</section>
+
+<section>
+  <h2>Servicios</h2>
+  <ul>
+    <li>✔ Personalización estética</li>
+    <li>✔ Detailing profesional</li>
+    <li>✔ Accesorios automotrices</li>
+    <li>✔ Asesoría especializada</li>
+  </ul>
+</section>
+
+<footer>
+  © 2026 Overdrive Customs · Todos los derechos reservados
+</footer>
+
+</body>
+</html>
