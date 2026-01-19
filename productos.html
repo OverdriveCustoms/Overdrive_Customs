@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* Reutilizamos tu estilo base */
+/* Estilo Base */
 * { box-sizing: border-box; }
 body {
   margin: 0; padding: 0;
@@ -36,7 +36,7 @@ header {
   font-size: 15px;
 }
 
-/* --- SECCIÓN DE PRODUCTOS --- */
+/* --- SECCIÓN PRODUCTOS --- */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -51,7 +51,6 @@ h1 {
   margin-bottom: 40px;
 }
 
-/* La cuadrícula de productos */
 .grid-productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -59,52 +58,64 @@ h1 {
 }
 
 .producto-card {
-  background: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 8px;
+  background: #161616;
+  border: 1px solid #222;
+  border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .producto-card:hover {
   transform: translateY(-10px);
   border-color: #ff6a00;
+  box-shadow: 0 10px 20px rgba(255, 106, 0, 0.2);
 }
 
 .producto-card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover; /* Esto hace que las fotos no se deformen */
+  height: 220px;
+  object-fit: cover;
   border-bottom: 2px solid #ff6a00;
+  background: #222; /* Fondo por si no carga la imagen */
 }
 
 .info-prod {
   padding: 20px;
   text-align: center;
+  flex-grow: 1;
 }
 
 .info-prod h3 {
   margin: 0 0 10px 0;
-  color: #ffffff;
+  color: #ff6a00;
   text-transform: uppercase;
+  font-size: 18px;
 }
 
 .info-prod p {
-  color: #aaaaaa;
+  color: #bbbbbb;
   font-size: 14px;
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .btn-cotizar {
   display: inline-block;
   background: #ff6a00;
   color: #000;
-  padding: 10px 20px;
+  padding: 12px 20px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 6px;
   text-transform: uppercase;
   font-size: 13px;
+  transition: 0.3s;
+}
+
+.btn-cotizar:hover {
+  background: #ffffff;
 }
 
 footer {
@@ -127,34 +138,43 @@ footer {
 </header>
 
 <div class="container">
-  <h1>Nuestros Productos</h1>
+  <h1>Catálogo Overdrive</h1>
 
   <div class="grid-productos">
     
     <div class="producto-card">
-      <img src="assets/producto1.jpg" alt="Accesorio 1">
+      <img src="assets/limpia_bordes.jpg" alt="Limpia Bordes">
       <div class="info-prod">
-        <h3>Kit Estético</h3>
-        <p>Mejora la aerodinámica y el look de tu vehículo con piezas de alta calidad.</p>
-        <a href="https://wa.me/TUNUMERO" class="btn-cotizar">Cotizar</a>
+        <h3>Limpia Bordes Pro</h3>
+        <p>Especial para eliminar suciedad difícil en los filos y juntas de tu vehículo. Acabado impecable.</p>
+        <a href="https://wa.me/593969048703?text=Hola! Me interesa el Limpia Bordes" target="_blank" class="btn-cotizar">Cotizar WhatsApp</a>
       </div>
     </div>
 
     <div class="producto-card">
-      <img src="assets/producto2.jpg" alt="Accesorio 2">
+      <img src="assets/cepillos.jpg" alt="Cepillos Detallado">
       <div class="info-prod">
-        <h3>Iluminación LED</h3>
-        <p>Faros y luces ambientales con instalación profesional y garantía.</p>
-        <a href="https://wa.me/TUNUMERO" class="btn-cotizar">Cotizar</a>
+        <h3>Cepillos de Detallado</h3>
+        <p>Set de brochas suaves para interiores y exteriores. Llega a los rincones más difíciles sin rayar.</p>
+        <a href="https://wa.me/593969048703?text=Hola! Me interesa el set de Cepillos de Detallado" target="_blank" class="btn-cotizar">Cotizar WhatsApp</a>
       </div>
     </div>
 
     <div class="producto-card">
-      <img src="assets/producto3.jpg" alt="Accesorio 3">
+      <img src="assets/toallas.jpg" alt="Toallas Brillantes">
       <div class="info-prod">
-        <h3>Detallado Interior</h3>
-        <p>Limpieza profunda y restauración de plásticos para un look de agencia.</p>
-        <a href="https://wa.me/TUNUMERO" class="btn-cotizar">Cotizar</a>
+        <h3>Toallas Microfibra Premium</h3>
+        <p>Ultra absorbentes y diseñadas para dar el máximo brillo a la carrocería sin dejar pelusas.</p>
+        <a href="https://wa.me/593969048703?text=Hola! Me interesan las Toallas con Brillantes" target="_blank" class="btn-cotizar">Cotizar WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="producto-card">
+      <img src="assets/espuma.jpg" alt="Espuma Limpia Manchas">
+      <div class="info-prod">
+        <h3>Espuma Limpia Manchas</h3>
+        <p>Poderosa fórmula para tapicería y alfombras. Elimina manchas de grasa y suciedad profunda al instante.</p>
+        <a href="https://wa.me/593969048703?text=Hola! Me interesa la Espuma Limpia Manchas" target="_blank" class="btn-cotizar">Cotizar WhatsApp</a>
       </div>
     </div>
 
@@ -162,7 +182,7 @@ footer {
 </div>
 
 <footer>
-  © 2026 Overdrive Customs
+  © 2026 Overdrive Customs · Ecuador
 </footer>
 
 </body>
